@@ -13,7 +13,7 @@ class login extends StatefulWidget {
 class _loginState extends State<login> {
 
   Map<String, String> FormValues = {
-    "phone": "",
+    "email": "",
     "password": ""
 
   };
@@ -53,15 +53,15 @@ class _loginState extends State<login> {
                   Text("Please log in here", style: Head6Text(textColor)),
                   SizedBox(height: 20,),
                   TextFormField(onChanged: (Textvalue) {
-                    InputOnChange("ProductName", Textvalue);
-                  }, decoration: AppInputStyle('Product Name',)),
+                    InputOnChange("Email", Textvalue);
+                  }, decoration: AppInputStyle('Email',)),
 
                   SizedBox(height: 20,),
 
                   TextFormField(onChanged: (Textvalue) {
-                    InputOnChange("ProductCode", Textvalue);
+                    InputOnChange("Password", Textvalue);
                   },
-                      decoration: AppInputStyle('Product Code',)),
+                      decoration: AppInputStyle('Password ',)),
 
 
                   SizedBox(height: 20,),
