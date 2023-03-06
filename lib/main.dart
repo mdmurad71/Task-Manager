@@ -17,10 +17,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Task Manager',
+
        initialRoute: '/',
       routes: {
-        '/': (context)=>splash(),
-        '/login': (context)=>login(),
+        '/splash': (context)=>splash(),
+        '/': (context)=>login(),
         '/registration': (context)=>registration(),
         '/emailVerification': (context)=>emailVerification(),
         '/pinVerification': (context)=>pinVerification(),

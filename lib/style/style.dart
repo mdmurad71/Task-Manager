@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 // import 'package:fluttertoast/fluttertoast.dart';
 
+const textColor= Color.fromRGBO(3, 16, 29, 1.0);
+
 InputDecoration AppInputStyle(label){
   return InputDecoration(
     contentPadding: EdgeInsets.fromLTRB(20, 10, 10, 20),
@@ -13,6 +15,27 @@ InputDecoration AppInputStyle(label){
 
 
   );
+}
+
+
+TextStyle Head1Text(textColor){
+  return TextStyle(
+    color: textColor,
+    fontSize: 28,
+    fontWeight: FontWeight.w700,
+    fontFamily: 'poppins'
+  );
+
+}
+
+TextStyle Head6Text(textColor){
+  return TextStyle(
+      color: textColor,
+      fontSize: 16,
+      fontWeight: FontWeight.w400,
+      fontFamily: 'poppins'
+  );
+
 }
 
 ButtonStyle AppButtonStyle(){
